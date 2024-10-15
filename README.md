@@ -1,4 +1,4 @@
-# BMI Calculator (game)
+# BMI Calculator
 
 ## Table of contents
 - [Screenshot](#screenshot)
@@ -12,7 +12,7 @@
 
 ## Links
 
-[BMI Calculator Page]()
+[BMI Calculator Page](https://axinitm.github.io/BMI-calculator-mobile/)
 
 ## BMI Calculator Description
 
