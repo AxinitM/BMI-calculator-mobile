@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png" />
+
+    <title>Body Mass Index Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+
+  <body>
+    <!-- header section -->
+    <header id="header-section">
+      <img alt="A Logo Image" src="images/logo.png" />
+      <h1>Body Mass Index Calculator</h1>
+      <p>
+        Better understand your weight in relation to your height using our Body
+        Mass Index (BMI) calculator. While BMI is not the sole determinant of a
+        healthy weight, it offers a valuable starting point to evaluate your
+        overall health and well-being
+      </p>
+      <hr id="horizontal-line" />
+      <p>
+        BMI is a calculated measure of weight relative to height. It is
+        calculated differently for adults and children. This BMI calculator is
+        intended for person aged 20 and older. For factors affecting BMI, see
+        below
+      </p>
+    </header>
+
+    <!-- main section -->
+    <main>
+      <!-- calculate and input sections  -->
+      <section id="calculate-container">
+        <h2>Enter your details below</h2>
+
+        <div id="input-group">
+          <form>
+            <label for="person-height">Your Height (max 200cm):</label><br />
+            <input
+              type="number"
+              id="person-height"
+              name="person-height"
+              placeholder="0"
+            /><br />
+            <label for="person-weight">Your Weight (max 200kg):</label><br />
+            <input
+              type="number"
+              id="person-weight"
+              name="person-weight"
+              placeholder="0"
+            />
+          </form>
+        </div>
+        <div id="calculate-button-section">
+          <input type="submit" value="Calculate" id="calculate-button" />
+        </div>
+        <div id="reset-button-section">
+          <input type="submit" value="Reset" id="reset-button" />
+        </div>
+      </section>
+
+      <!-- img  and result sections -->
+      <section>
+        <div id="result-container">
+          <article>
+            <img
+              src="images/eating-people.jpg"
+              alt="A couple is eating breakfast"
+            />
+          </article>
+          <article class="BMI-result-section">
+            <h2>Your BMI is <span id="BMI-result-score">...</span></h2>
+            <p class="BMI-result-conclusion">
+              To calculate your BMI, please enter your height in centimeters and
+              your weight in kilograms above
+            </p>
+            <a href="#horizontal-line">New Calculate</a>
+          </article>
+        </div>
+      </section>
+
+      <!-- General recommendation section-->
+      <section id="general-recommendation-section">
+        <img src="images/icon-eating.svg" alt="Healthy Sign" />
+        <h3>Healthy eating</h3>
+        <p>
+          Healthy eating promotes weight control, disease prevention, better
+          digestion, immunity, mental clarity, and mood.
+        </p>
+
+        <img src="images/icon-exercise.svg" alt="Exercise Sign" />
+        <h3>Regular exercise</h3>
+        <p>
+          Exercise improves fitness, aids weight control, elevates mood, and
+          reduces disease risk, fostering wellness and longevity.
+        </p>
+
+        <img src="images/icon-sleep.svg" alt="Sleeping Sign" />
+        <h3>Adequate sleep</h3>
+        <p>
+          Sleep enhances mental clarity, emotional stability, and physical
+          wellness, promoting overall restoration and rejuvenation.
+        </p>
+      </section>
+
+      <!-- Limitations of BMI section -->
+      <section id="limitations-BMI-section">
+        <article>
+          <h2>Limitations of BMI</h2>
+          <p class="header-par">
+            Although BMI is often a practical indicator of healthy weight, it is
+            not suited for every person. Specific groups should carefully
+            consider their BMI outcomes, and in certain cases, the measurement
+            may not be beneficial to use.
+          </p>
+        </article>
+
+        <article class="limitations-info-block">
+          <div class="info-block-header">
+            <img src="images/icon-gender.svg" alt="Combine Gender Sign" />
+            <h4>Gender</h4>
+          </div>
+          <p>
+            The development and body fat composition of girls and boys vary with
+            age. Consequently, a child's age and gender are considered when
+            evaluating their BMI.
+          </p>
+        </article>
+
+        <article class="limitations-info-block">
+          <div class="info-block-header">
+            <img src="images/icon-age.svg" alt="Age Sign" />
+            <h4>Age</h4>
+          </div>
+          <p>
+            In aging individuals, increased body fat and muscle loss may cause
+            BMI to underestimate body fat content.
+          </p>
+        </article>
+
+        <article class="limitations-info-block">
+          <div class="info-block-header">
+            <img src="images/icon-muscle.svg" alt="Muscle Sign" />
+            <h4>Muscle</h4>
+          </div>
+          <p>
+            BMI may misclassify muscular individuals as overweight or obese, as
+            it doesn't differentiate muscle from fat.
+          </p>
+        </article>
+
+        <article class="limitations-info-block">
+          <div class="info-block-header">
+            <img src="images/icon-pregnancy.svg" alt="Pregnant Sign" />
+            <h4>Pregnancy</h4>
+          </div>
+          <p>
+            Expectant mothers experience weight gain due to their growing baby.
+            Maintaining a healthy pre-pregnancy BMI is advisable to minimize
+            health risks for both mother and child.
+          </p>
+        </article>
+
+        <article class="limitations-info-block">
+          <div class="info-block-header">
+            <img src="images/icon-race.svg" alt="Race Sign" />
+            <h4>Race</h4>
+          </div>
+          <p>
+            Certain health concerns may affect individuals of some Black and
+            Asian origins at lower BMIs than others. To learn more, it is
+            advised to discuss this with your GP or practice nurse.
+          </p>
+        </article>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- img src https://www.freepik.com/free-vector/eat-breakfast-concept-illustration_26581437.htm#fromView=author&page=2&position=25&uuid=f0f2cd05-65ad-46d5-96d1-b1c01512696c -->

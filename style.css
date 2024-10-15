@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  /*  colors */
+  --mainBgColor: #e6e6fa; /* Lavender */
+  --mainBlueColor: #345ff6; /* Blue */
+  --mainDarkColor: #253347; /* Gunmetal */
+  --mainDarkBlueColor: #5e6e85; /* Dark Electric Blue */
+  --boxShadowColor: #345ff615; /* Blue + Opacity*/
+  --boxShadowDarkColor: #25334715; /* Gunmetal + Opacity*/
+  --resultGreatBgColor: #006400; /* Darkgreen*/
+  --resultBadBgColor: #8b0000; /* Darkblue*/
+  --resultWorseBgColor: #ff0000; /* Darkred*/
+  --whiteColor: #fff;
+
+  /* fonts */
+
+  --mainFontFamily: "Inter", Arial, sans-serif;
+}
+
+/* GENERAL SETS */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--mainFontFamily);
+}
+
+p {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 150%;
+  color: var(--mainDarkBlueColor);
+}
+
+/* mobile screens sets */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 328px;
+  margin: 0 auto;
+  background-color: var(--mainBgColor);
+  font-size: 16px;
+  line-height: 150%;
+}
+
+#horizontal-line {
+  width: 10%;
+  height: 1px;
+  background-color: var(--mainDarkColor);
+  margin: 1rem auto;
+}
+
+/* header section */
+
+#header-section {
+  display: inherit;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+
+#header-section h1 {
+  font-size: 3rem;
+  margin: 1.5rem auto;
+  line-height: 110%;
+}
+
+#header-section img {
+  width: 40px;
+  height: 40px;
+  margin: 2rem auto 0rem;
+}
+
+#header-section p {
+  color: var(--mainDarkBlueColor);
+  text-align: center;
+}
+
+/* MAIN SECTION */
+/* calculate section */
+
+#calculate-container {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5 auto;
+  background-color: var(--boxShadowColor);
+  border-radius: 1rem;
+  width: 100%;
+  margin: 2rem auto;
+  box-shadow: 5px 5px 15px var(--boxShadowDarkColor),
+    -5px -5px 15px var(--boxShadowDarkColor);
+}
+
+#calculate-container h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: var(--mainDarkColor);
+  margin: 1rem;
+  line-height: 110%;
+}
+
+/* input weight and height section  */
+
+#input-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0.5rem auto;
+  gap: 1rem;
+}
+
+#input-group label {
+  font-size: 0.7rem;
+  font-weight: 400;
+}
+
+#person-height {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='18'%3E%3Ctext x='0' y='15' fill='%23345ff6' font-family='Inter' font-size='16' font-weight='600'%3Ecm%3C/text%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 3px top 40%;
+}
+
+#person-weight {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='30' height='18'%3E%3Ctext x='0' y='15' fill='%23345ff6' font-family='Inter' font-size='16' font-weight='600'%3Ekg%3C/text%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0px top 40%;
+}
+
+#person-height,
+#person-weight {
+  width: 100%;
+  max-width: 200px;
+  height: 2rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--mainDarkColor);
+  text-align: left;
+  padding: 15px;
+  font-size: 1.1rem;
+  box-sizing: border-box;
+}
+
+#person-height {
+  margin-bottom: 1.5rem;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*  calculate and reset buttons section   */
+
+#calculate-button-section {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem 1rem;
+}
+
+#calculate-button {
+  width: 50%;
+  height: 2rem;
+  background-color: var(--mainBlueColor);
+  color: var(--whiteColor);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--mainDarkBlueColor);
+  margin: 0;
+  box-shadow: 0 2px 4px var(--mainDarkColor);
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+#calculate-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 1px 2px var(--mainDarkColor);
+}
+
+/* reset button section */
+
+#reset-button-section {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0 1.5rem;
+}
+
+#reset-button {
+  background: none;
+  border: none;
+  color: var(--mainDarkBlueColor);
+  font: var(--mainFontFamily);
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+#reset-button:active {
+  text-decoration: none;
+}
+
+/* result section */
+
+#result-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  background-color: var(--mainBlueColor);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem auto 2rem;
+  box-shadow: 5px 5px 15px var(--boxShadowDarkColor),
+    -5px -5px 15px var(--boxShadowDarkColor);
+}
+
+#result-container h2 {
+  width: 100%;
+  text-align: center;
+  margin: 1rem auto;
+  color: var(--whiteColor);
+  letter-spacing: 1.5px;
+}
+
+#BMI-result-score {
+  font-size: 2.2rem;
+}
+
+#result-container img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+#result-container p {
+  margin: 1rem 1rem 1.5rem;
+  color: var(--whiteColor);
+  text-align: left;
+}
+
+a {
+  background-color: var(--mainDarkColor);
+  color: var(--whiteColor);
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid var(--mainDarkBlueColor);
+  padding: 0.4rem;
+  cursor: pointer;
+}
+
+/* General recommendation section */
+
+#general-recommendation-section {
+  width: 100%;
+  background-color: var(--boxShadowColor);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem auto;
+  box-shadow: 5px 5px 15px var(--boxShadowDarkColor),
+    -5px -5px 15px var(--boxShadowDarkColor);
+}
+
+#general-recommendation-section h3 {
+  font-size: 1.5rem;
+  color: var(--mainDarkColor);
+  text-align: left;
+  margin: 0 1rem 0;
+}
+
+#general-recommendation-section img {
+  width: 40px;
+  height: 40px;
+  margin: 0.5rem;
+}
+#general-recommendation-section p {
+  margin: 1rem;
+}
+
+/* Limitations of BMI section */
+#limitations-BMI-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem auto 0.8rem;
+}
+
+#limitations-BMI-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+#limitations-BMI-section h4 {
+  color: var(--mainDarkColor);
+  font-size: 1.25rem;
+}
+
+#limitations-BMI-section .header-par {
+  text-align: center;
+  color: var(--mainDarkBlueColor);
+  margin-bottom: 1rem;
+}
+
+.info-block-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.limitations-info-block {
+  width: 100%;
+  background-color: var(--whiteColor);
+  padding: 22px;
+  margin: 0.8rem auto;
+  border-radius: 1rem;
+  box-shadow: 5px 5px 15px var(--boxShadowColor),
+    -5px -5px 15px var(--boxShadowColor);
+}
