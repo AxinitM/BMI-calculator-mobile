@@ -1,17 +1,14 @@
 # BMI Calculator (game)
 
 ## Table of contents
-
-- [BMI Calculator (game)](#bmi-calculator-game)
-  - [Table of contents](#table-of-contents)
-  - [Screenshot](#screenshot)
-  - [Links](#links)
-  - [BMI Calculator Description](#bmi-calculator-description)
-  - [Author](#author)
+- [Screenshot](#screenshot)
+- [Links](#links)
+- [BMI Calculator Description](#bmi-calculator-description)
+- [Author](#author)
 
 ## Screenshot
 
-![](./images/screenshot.png)
+![](/images/screenshot.png)
 
 ## Links
 
