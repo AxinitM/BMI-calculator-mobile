@@ -13,12 +13,19 @@ document.addEventListener("DOMContentLoaded", function () {
   weightInput.addEventListener("input", limitInput);
   heightInput.addEventListener("input", limitInput);
 
-  calculateButton.addEventListener("click", function (event) {
-    event.preventDefault();
-    if (validateWeight() && validateHeight()) {
-      calculateBMI();
+    calculateButton.addEventListener("click", function (event) {
+  event.preventDefault();
+  if (validateWeight() && validateHeight()) {
+    calculateBMI();
+    const targetDiv = document.getElementById("result-container");
+    if (targetDiv) {
+      targetDiv.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     }
-  });
+  }
+});
 
   resetButton.addEventListener("click", function (event) {
     event.preventDefault();
