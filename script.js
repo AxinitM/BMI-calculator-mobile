@@ -95,7 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
       bmiResultConclusion.textContent =
         "A BMI range of 18.50 to 24.99 is considered a 'healthy weight'. Maintaining a healthy weight may lower your chances of experiencing health issues later on, such as obesity and type 2 diabetes. Aim for a nutritious diet with reduced fat and sugar content, incorporating ample fruits and vegetables. Additionally, strive for regular physical activity, ideally about 30 minutes daily for five days a week.";
       bmiResultContainer.style.backgroundColor = "var(--resultGreatBgColor)";
-    } else if (bmi >= 25.00 && bmi < 30.00) {
+    } else if (bmi > 24.99 && bmi < 30.00) {
       bmiResultConclusion.textContent =
         "If your BMI falls between 25 and 29.99, you are considered overweight. To reduce your weight, focus on maintaining a calorie deficit by consuming fewer calories than you burn. Opt for a balanced diet with more vegetables, fruits, lean proteins, and whole grains while minimizing high-calorie processed foods. Increase your physical activity by incorporating aerobic exercises like brisk walking, cycling, or swimming for at least 30 minutes a day, five days a week.";
       bmiResultContainer.style.backgroundColor = "var(--resultBadBgColor)";
